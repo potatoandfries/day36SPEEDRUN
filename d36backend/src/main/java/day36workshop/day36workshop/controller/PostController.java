@@ -81,7 +81,7 @@ public class PostController {
         public ResponseEntity<String> getAllPosts(){
 
             JsonArray posts = svc.getAllPosts();
-
+            System.out.println("this is the problem");
             return ResponseEntity.status(200)
                 .body(posts.toString());
         }

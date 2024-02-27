@@ -41,6 +41,7 @@ public class PostService {
                 Json.createObjectBuilder()
                     .add("post_id", post.id())
                     .add("comments", post.comments())
+                   
             );
         });
         return builder.build();

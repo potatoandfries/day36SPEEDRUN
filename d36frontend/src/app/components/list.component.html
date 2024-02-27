@@ -1,0 +1,12 @@
+<div *ngIf="p$ | async as posts">
+    <div *ngIf="posts.length > 0; else noPost">
+        <div *ngFor="let post of posts">
+            <img [src]="'api/post/image/'+ post.post_id">
+            <p>{{ post.comments }}</p>
+        </div>
+    </div>
+</div>
+
+<ng-template #noPost>
+    No posts
+</ng-template>

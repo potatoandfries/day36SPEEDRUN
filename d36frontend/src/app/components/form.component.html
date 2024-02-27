@@ -1,0 +1,23 @@
+<h1>Create Post</h1>
+<form [formGroup]="postform" (submit)="pressed()">
+    <table>
+        <tr>
+            <td>Comments: </td>
+            <td>
+                <input type="text" size="30" formControlName="comments">
+              </td>
+        </tr>
+        <tr>
+            <td>Picture: </td>
+            <td>
+                <input type="file" name="file" #file>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" [disabled]="postform.invalid">Post</button>
+            </td>
+        </tr>
+    </table>
+</form>

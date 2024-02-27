@@ -8,6 +8,7 @@ create table posts (
 	post_id varchar(8) not null,
     comments mediumtext,
     picture mediumblob,
+    mime varchar(128),
 
 primary key(post_id)
 );

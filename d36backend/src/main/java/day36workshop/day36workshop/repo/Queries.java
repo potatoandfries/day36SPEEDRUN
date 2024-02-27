@@ -3,8 +3,8 @@ package day36workshop.day36workshop.repo;
 public class Queries {
     
         public static final String SQL_SAVE_POST = """
-            INSERT INTO posts (post_id, comments,picture)
-            VALUE (?,?,?);
+            INSERT INTO posts (post_id, comments,picture,mime)
+            VALUE (?,?,?,?);
             """;
 
             public static final String SQL_READ_POST = """
