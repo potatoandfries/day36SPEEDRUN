@@ -1,4 +1,4 @@
 export interface Post{
-    post_id :string
-    comments :String
+    post_id : string
+    comments : string
 }

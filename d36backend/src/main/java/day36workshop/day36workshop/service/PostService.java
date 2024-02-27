@@ -34,7 +34,7 @@ public class PostService {
     }
 
     public JsonArray getAllPosts() {
-        List<Post> posts = new LinkedList<>();
+        List<Post> posts = repo.getAllPosts();
         JsonArrayBuilder builder = Json.createArrayBuilder();
         posts.forEach(post -> {
             builder.add(
